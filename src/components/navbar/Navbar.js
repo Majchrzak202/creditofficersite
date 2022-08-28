@@ -11,13 +11,15 @@ import {
 } from "@mui/material";
 import { IconButton } from "@material-ui/core";
 import { Menu as MenuIcon } from "@mui/icons-material";
-
+import SocialNavbar from "../social-navbar/SocialNavbar";
 import useStyles from "./Styles";
+import SimpleMenu from "./SimpleMenu";
 
-const pages = ['Start', 'Dlaczego Ja', 'Oferta', 'Rekomendacje', 'Kontakt']
+const pages = ["O mnie", <SimpleMenu pointer='cursor'/>,  "Kontakt", ];
 
 const Navbar = () => {
   const classes = useStyles();
+
   const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -28,10 +30,17 @@ const Navbar = () => {
     setAnchorElNav(null);
   };
   return (
-    <div className={classes.appbar}>
-      <AppBar sx={{ bgcolor: "#37393b" }} position="fixed">
-        <Container maxWidth="xl">
-          <Toolbar  className={classes.toolbar} disableGutters>
+    <Box style={{ marginTop: "50px" }}>
+      <AppBar position="fixed">
+        <SocialNavbar />
+        <Container
+          sx={{
+            bgcolor: "#37393b",
+            height: "75px",
+          }}
+          maxWidth="xl"
+        >
+          <Toolbar disableGutters>
             <Typography
               variant="h6"
               noWrap
@@ -43,9 +52,10 @@ const Navbar = () => {
                 letterSpacing: ".1.5rem",
                 color: "white",
                 textDecoration: "none",
+                marginLeft: "25px",
               }}
             >
-        Joanna Filip    
+              Joanna Filip
             </Typography>
 
             <Typography
@@ -55,15 +65,12 @@ const Navbar = () => {
                 mr: 2,
                 display: { xs: "flex", md: "none" },
                 flexGrow: 1,
-                fontFamily: "helvetica",
-                fontWeight: 400,
-                
+                fontWeight: 700,
                 color: "inherit",
                 textDecoration: "none",
               }}
             >
-              JOANNA FILIP 
-              EKSPERT KREDYTOWY
+              Joanna Filip
             </Typography>
 
             <div className={classes.grow} />
@@ -87,8 +94,10 @@ const Navbar = () => {
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
                 color="inherit"
-              ><MenuIcon/></IconButton>
-              
+              >
+                <MenuIcon />
+              </IconButton>
+
               <Menu
                 className={classes.mobilemenu}
                 id="menu-appbar"
@@ -110,13 +119,7 @@ const Navbar = () => {
               >
                 {pages.map((page) => (
                   <MenuItem key={Math.random()} onClick={handleCloseNavMenu}>
-                    <Typography
-                      style={{ textDecoration: "none" }}
-                      textAlign="center"
-                      variant="inherit"
-                    >
-                      {page}
-                    </Typography>
+                    {page}
                   </MenuItem>
                 ))}
               </Menu>
@@ -124,7 +127,7 @@ const Navbar = () => {
           </Toolbar>
         </Container>
       </AppBar>
-    </div>
+    </Box>
   );
 };
 
