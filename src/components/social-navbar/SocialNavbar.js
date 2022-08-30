@@ -1,6 +1,6 @@
 import React from "react";
 import useStyles from "./Styles";
-import { Container, Toolbar, Grid} from "@mui/material";
+import { Container, Toolbar, Grid } from "@mui/material";
 import { LocalPhone, Email, WatchLater } from "@mui/icons-material";
 
 const SocialNavbar = () => {
@@ -18,14 +18,22 @@ const SocialNavbar = () => {
       maxWidth="xl"
     >
       <Toolbar>
-        <Grid container>
-          <Grid className={classes.item} item>
+        <Grid className={classes.container} container>
+          <Grid
+            className={classes.item}
+            display={{ xs: "flex", sm: "flex", lg: "flex", md: "flex" }}
+            item
+          >
             <LocalPhone fontSize="small" />
             784840722
           </Grid>
-          <Grid className={classes.item} item>
+          <Grid
+            className={classes.item}
+            display={{ xs: "flex", sm: "flex", lg: "flex", md: "flex" }}
+            item
+          >
             <Email fontSize="small" />
-            Biuro@filipkredyty.pl
+            Biuro@filip.pl
           </Grid>
           <Grid
             display={{ xs: "none", sm: "flex", lg: "flex", md: "flex" }}
