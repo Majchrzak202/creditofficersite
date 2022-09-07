@@ -7,22 +7,27 @@ const useStyles = makeStyles({
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
-    marginTop: "40px",
+    backgroundColor: '#F5F5F5'
   },
   container: {
     marginTop: "5px",
     width: "50vh",
     padding: "20px",
+    display: 'flex'
+  
   },
 
   item: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: "30px",
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: '5px'
+    
+   
   },
   box: {
-    padding: "50px",
+    padding: "70px",
     borderRadius: "99%",
     borderColor: "black",
     backgroundColor: "#D3D3D3",
@@ -33,8 +38,12 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
   svgIcon: {
-    transform: "scale(2.5)"
-  }
+    transform: "scale(2.5)",
+    "&:hover": {
+      transform: "scale(3.5)",
+      transition: "all .2s ease",
+    },
+  },
 });
 
 export default useStyles;
