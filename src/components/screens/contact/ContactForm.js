@@ -21,10 +21,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_11vyjye",
-        "template_l9mkf1y",
+        process.env.REACT_APP_EMAILJS_SERVICE,
+        process.env.REACT_APP_EMAILJS_TEMPLATE,
         form.current,
-        "89MLTuzm8HTh0ZBDQ"
+        process.env.REACT_APP_EMAILJS_KEY
       )
       .then(
         (result) => {
