@@ -1,7 +1,7 @@
 import React from "react";
 import useStyles from "./Styles";
-import { Grid,  Typography, Box } from "@mui/material";
-import {  Anchor, Architecture } from "@mui/icons-material";
+import { Grid, Typography, Box } from "@mui/material";
+import { Anchor, Architecture } from "@mui/icons-material";
 import { BeachAccess } from "@mui/icons-material";
 
 const WhyMe = () => {
@@ -13,40 +13,61 @@ const WhyMe = () => {
       </Typography>
       <Grid
         className={classes.container}
-        style={{ marginTop: "50px" }}
+        style={{ marginTop: "30px" }}
         container
-        spacing={2}
+        spacing={1}
       >
         <Grid item className={classes.item} xs={12} sm={4} md={4}>
-          <Box className={classes.box}>
-            <BeachAccess className={classes.svgIcon} />
+          <Box
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              marginBottom: '5px'
+            }}
+          >
+            <Box className={classes.box}>
+              <BeachAccess className={classes.svgIcon} />
+            </Box>
+            <Typography style={{ marginTop: "15px" }}>
+              Pewność i bezpieczeństwo
+            </Typography>
           </Box>
         </Grid>
         <Grid item className={classes.item} xs={12} sm={4} md={4}>
-          <Box className={classes.box}>
-            <Anchor className={classes.svgIcon} />
+          <Box
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Box className={classes.box}>
+              <Anchor className={classes.svgIcon} />
+            </Box>
+            <Typography style={{ marginTop: "15px" }}>
+              Szeroki wybór ponad 21 banków
+            </Typography>
           </Box>
         </Grid>
         <Grid item className={classes.item} xs={12} sm={4} md={4}>
-          <Box className={classes.box}>
-            <Architecture className={classes.svgIcon} fontSize="large" />
+          <Box
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Box className={classes.box}>
+              <Architecture className={classes.svgIcon} fontSize="large" />
+            </Box>
+            <Typography style={{ marginTop: "15px" }}>
+              Plan skrojony pod Twoje potrzeby
+            </Typography>
           </Box>
-        </Grid>
-      </Grid>
-      <Grid
-        className={classes.container}
-        style={{ marginTop: "50px" }}
-        container
-        spacing={2}
-      >
-        <Grid item xs={12} sm={4} md={4}>
-          <Box>Pewność i bezpieczeństwo</Box>
-        </Grid>
-        <Grid item xs={12} sm={4} md={4}>
-          <Box>Szeroki wybór ponad 21 banków</Box>
-        </Grid>
-        <Grid item xs={12} sm={4} md={4}>
-          <Box>Plan skrojony pod Twoje potrzeby</Box>
         </Grid>
       </Grid>
     </div>
