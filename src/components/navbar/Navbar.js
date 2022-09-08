@@ -1,26 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   AppBar,
   Container,
   Toolbar,
-  Typography,
   Box,
   Button,
   Menu,
   MenuItem,
+  CardMedia,
 } from "@mui/material";
 import { IconButton } from "@material-ui/core";
 import { Menu as MenuIcon } from "@mui/icons-material";
 import SocialNavbar from "../social-navbar/SocialNavbar";
 import useStyles from "./Styles";
 import SimpleMenu from "./SimpleMenu";
+import { Link } from "react-router-dom";
+import Logo from "./../../assets/Logo.svg";
 
-const pages = ["O mnie", <SimpleMenu pointer='cursor'/>,  "Kontakt", ];
+
 
 const Navbar = () => {
   const classes = useStyles();
-
   const [anchorElNav, setAnchorElNav] = useState(null);
+
+  const pages = [
+    <Link className={classes.link} to="omnie">
+      O mnie
+    </Link>,
+    <SimpleMenu />,
+    <Link className={classes.link} to="/kontakt">
+      Kontakt
+    </Link>,
+  ];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -36,44 +47,48 @@ const Navbar = () => {
         <Container
           sx={{
             bgcolor: "#37393b",
-            height: "75px",
+            height: "5rem",
           }}
-          maxWidth="xl"
+          maxWidth="xxl"
         >
-          <Toolbar disableGutters>
-            <Typography
-              variant="h6"
-              noWrap
-              sx={{
-                mr: 2,
-                display: { xs: "none", md: "flex" },
-                fontFamily: "helvetica",
-                fontWeight: 700,
-                letterSpacing: ".1.5rem",
-                color: "white",
-                textDecoration: "none",
-                marginLeft: "25px",
-              }}
-            >
-              Joanna Filip
-            </Typography>
+          <Toolbar
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Link to="/">
+              <CardMedia
+                variant="h6"
+                sx={{
+                  display: { xs: "none", md: "flex" },
+                  marginTop: "5px",
+                }}
+              >
+                <img style={{ width: "60%", height: "60%" }} src={Logo} />
+              </CardMedia>
+            </Link>
+            <Link to="/">
+              <CardMedia
+                variant="h6"
+                sx={{
+                  display: { xs: "flex", md: "none" },
 
-            <Typography
-              variant="h5"
-              noWrap
-              sx={{
-                mr: 2,
-                display: { xs: "flex", md: "none" },
-                flexGrow: 1,
-                fontWeight: 700,
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              Joanna Filip
-            </Typography>
+                  marginTop: "5px",
+                }}
+              >
+                <img style={{ width: "60%", height: "60%" }} src={Logo} />
+              </CardMedia>
+            </Link>
 
-            <div className={classes.grow} />
+            <Box
+              sx={{
+                display: { xs: "flex", md: "flex" },
+              }}
+              className={classes.grow}
+            />
+
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
                 <Button
@@ -86,7 +101,11 @@ const Navbar = () => {
               ))}
             </Box>
 
-            <Box sx={{ display: { xs: "flex", md: "none" } }}>
+            <Box
+              sx={{
+                display: { xs: "flex", md: "none" },
+              }}
+            >
               <IconButton
                 size="medium"
                 aria-label="account of current user"

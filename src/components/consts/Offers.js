@@ -1,8 +1,9 @@
 import { BusinessCenter } from "@mui/icons-material";
 import { Factory, Agriculture } from "@mui/icons-material";
 import { MonetizationOn } from "@mui/icons-material";
-import { Toll } from "@mui/icons-material";
+
 import { LocalShipping } from "@mui/icons-material";
+import { Apartment } from "@mui/icons-material";
 
 const offerSegments = [
   {
@@ -15,7 +16,7 @@ const offerSegments = [
 
     id: 1,
     backgroundImage:
-      "https://pixabay.com/get/g226cbef55b413d3796cd077a0a16e4ce178af8205cdf00bb76d9e2a5363d807c5d6aac6d906c93e444c8f7f50f031516e4264b56be82647092d4017da78b51569650a0dc15c4ff30e3327791ccb550a2_1280.jpg",
+      "https://i.ibb.co/MRnwfpB/pexels-the-coach-space-2977547.jpg",
   },
   {
     title: "Kredyt inwestycyjny",
@@ -26,8 +27,7 @@ const offerSegments = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
     id: 2,
-    backgroundImage:
-      "https://pixabay.com/get/g226cbef55b413d3796cd077a0a16e4ce178af8205cdf00bb76d9e2a5363d807c5d6aac6d906c93e444c8f7f50f031516e4264b56be82647092d4017da78b51569650a0dc15c4ff30e3327791ccb550a2_1280.jpg",
+    backgroundImage: "https://i.ibb.co/6YtmgN7/pexels-pixabay-209251-1-1.jpg",
   },
   {
     title: "Kredyt rolniczy",
@@ -39,7 +39,7 @@ const offerSegments = [
 
     id: 3,
     backgroundImage:
-      "https://pixabay.com/get/g226cbef55b413d3796cd077a0a16e4ce178af8205cdf00bb76d9e2a5363d807c5d6aac6d906c93e444c8f7f50f031516e4264b56be82647092d4017da78b51569650a0dc15c4ff30e3327791ccb550a2_1280.jpg",
+      "https://i.ibb.co/mrKc1mg/pexels-matthias-zomer-422218.jpg",
   },
   {
     title: "Kredyt konsolidacyjny",
@@ -50,20 +50,20 @@ const offerSegments = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
     id: 4,
-    backgroundImage:
-      "https://pixabay.com/get/g226cbef55b413d3796cd077a0a16e4ce178af8205cdf00bb76d9e2a5363d807c5d6aac6d906c93e444c8f7f50f031516e4264b56be82647092d4017da78b51569650a0dc15c4ff30e3327791ccb550a2_1280.jpg",
+    backgroundImage: "https://i.ibb.co/58NJF1d/pexels-lukas-590022.jpg",
   },
   {
-    title: "Kredyt gotówkowy",
+    title: "Kredyt deweloperski",
     shortDescription:
-      "Kredyt gotówkowy na dowolny cel. Minimalne formalności, szybki proces i nawet do 300 tys. zł. Najprostsza forma finansowania dla klientów indywidualnych i firmowych",
-    icon: <Toll />,
+      "Kredyt deweloperski na realizację lud dokończenie inwestycji. Refinans wsześniejszych zobowiązań. Wysokie kwoty nawet do 30 mln PLN. Współpraca z bankami Spółdzielczymi",
+
+    icon: <Apartment />,
     longDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
     id: 5,
     backgroundImage:
-      "https://pixabay.com/get/g226cbef55b413d3796cd077a0a16e4ce178af8205cdf00bb76d9e2a5363d807c5d6aac6d906c93e444c8f7f50f031516e4264b56be82647092d4017da78b51569650a0dc15c4ff30e3327791ccb550a2_1280.jpg",
+      "https://i.ibb.co/34VJj79/pexels-quang-nguyen-vinh-2138126-1.jpg",
   },
   {
     title: "Leasing",
@@ -73,8 +73,7 @@ const offerSegments = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     icon: <LocalShipping />,
     id: 6,
-    backgroundImage:
-      "https://pixabay.com/get/g226cbef55b413d3796cd077a0a16e4ce178af8205cdf00bb76d9e2a5363d807c5d6aac6d906c93e444c8f7f50f031516e4264b56be82647092d4017da78b51569650a0dc15c4ff30e3327791ccb550a2_1280.jpg",
+    backgroundImage: "https://i.ibb.co/qM6MnQ8/pexels-pixabay-164634.jpg",
   },
 ];
 
