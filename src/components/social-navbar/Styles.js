@@ -5,8 +5,13 @@ const useStyles = makeStyles({
     display: "flex",
     alignItems: "flex",
     justifyContent: "flex",
-    padding: "15px",
+    flexDirection:'row',
+    padding: "10px",
   },
+  container: {
+    display: 'flex', 
+    flexDirection: 'row'
+  }
 });
 
 export default useStyles;
