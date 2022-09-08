@@ -15,7 +15,7 @@ const SocialNavbar = () => {
         alignItems: "center",
         flexShrink: 0,
       }}
-      maxWidth="xl"
+      maxWidth="xxl"
     >
       <Toolbar>
         <Grid className={classes.container} container>
