@@ -24,4 +24,6 @@
   <li> How to bundle and optimize images and data before deploying site</li>
 </ul>
 
+<p>See the live demo <a href='https://joannafilip-finanse.web.app/'>here</a></p>
+
 <p> All rights reserved 2022</p>
