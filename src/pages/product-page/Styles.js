@@ -4,10 +4,10 @@ const useStyles = makeStyles((theme) => ({
   page: {
     minHeight: "80vh",
     minWidth: "100vw",
-    marginTop: "80px",
+    marginTop: "10px",
     [theme.breakpoints.down("xs")]: {
       minHeight: "60vh",
-      marginTop: "10px",
+      marginTop: "3px",
     },
   },
   paperContainer: {
@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
-
     backgroundRepeat: "no-repeat  ", // Never repeat
     backgroundSize: " cover", // Keep size cover
     backgroundPosition: "center",

@@ -17,8 +17,6 @@ import SimpleMenu from "./SimpleMenu";
 import { Link } from "react-router-dom";
 import Logo from "./../../assets/Logo.svg";
 
-
-
 const Navbar = () => {
   const classes = useStyles();
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -41,13 +39,12 @@ const Navbar = () => {
     setAnchorElNav(null);
   };
   return (
-    <Box style={{ marginTop: "50px" }}>
+    <Box style={{ padding: "50px" }}>
       <AppBar position="fixed">
-        <SocialNavbar />
         <Container
           sx={{
             bgcolor: "#37393b",
-            height: "5rem",
+            height: "auto",
           }}
           maxWidth="xxl"
         >
@@ -66,7 +63,11 @@ const Navbar = () => {
                   marginTop: "5px",
                 }}
               >
-                <img style={{ width: "60%", height: "60%" }} src={Logo} />
+                <img
+                  style={{ width: "60%", height: "60%" }}
+                  src={Logo}
+                  alt="logo"
+                />
               </CardMedia>
             </Link>
             <Link to="/">
@@ -78,7 +79,11 @@ const Navbar = () => {
                   marginTop: "5px",
                 }}
               >
-                <img style={{ width: "60%", height: "60%" }} src={Logo} />
+                <img
+                  style={{ width: "60%", height: "60%" }}
+                  src={Logo}
+                  alt="logo"
+                />
               </CardMedia>
             </Link>
 
@@ -145,6 +150,7 @@ const Navbar = () => {
             </Box>
           </Toolbar>
         </Container>
+        <SocialNavbar />
       </AppBar>
     </Box>
   );
