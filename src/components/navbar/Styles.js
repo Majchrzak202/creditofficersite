@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "18px,",
     [theme.breakpoints.down("sm")]: {
       color: "black",
-     
     },
   },
 }));
