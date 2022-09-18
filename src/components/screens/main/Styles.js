@@ -3,7 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   main: {
     minHeight: "auto",
-    minWidth: "auto",
+    width: '100vw',
+    maxWidth: '100vw',
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -37,6 +38,10 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     backgroundColor: "white",
+  },
+  image: {
+    height: "100%",
+    width: "100%",
   },
 }));
 

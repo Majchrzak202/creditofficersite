@@ -13,7 +13,7 @@ const Offer = () => {
         Wybierz najlepsze rozwiązanie:
       </Typography>
 
-      <Grid className={classes.containergrid} container spacing={3}>
+      <Grid className={classes.container} container spacing={3}>
         {offerSegments.map((offer) => (
           <Grid
             key={offer.title}
@@ -27,9 +27,9 @@ const Offer = () => {
               style={{ textDecoration: "none" }}
               to={`/kredyty/${offer.id}`}
             >
-              <Card style={{ padding: "30px" }}>
+              <Card className={classes.offerCard} >
                 {offer.icon}
-                <Typography fontWeight={800} style={{ marginBottom: "10px" }}>
+                <Typography className={classes.title} fontWeight={800} >
                   {offer.title}
                 </Typography>
                 <Typography align="justify">{offer.shortDescription}</Typography>
