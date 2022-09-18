@@ -9,12 +9,14 @@ import { Routes } from "react-router";
 import { Route } from "react-router";
 import AboutMe from "./components/screens/about/AboutMe";
 import ContactPage from "./components/screens/contact/ContactPage";
+import ScrollToTop from "./components/scroll-to-top/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
-      <SocialNavbar />
+      
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/kredyty/:id" element={<ProductPage />} />
