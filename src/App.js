@@ -14,7 +14,6 @@ import ScrollToTop from "./components/scroll-to-top/ScrollToTop";
 function App() {
   return (
     <div className="App">
-      
       <Navbar />
       <ScrollToTop />
       <Routes>
