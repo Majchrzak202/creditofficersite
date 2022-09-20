@@ -24,7 +24,7 @@ const WhyMe = () => {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              marginBottom: '5px'
+              marginBottom: "5px",
             }}
           >
             <Box className={classes.box}>

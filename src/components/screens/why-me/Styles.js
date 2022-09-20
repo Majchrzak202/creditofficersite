@@ -7,25 +7,22 @@ const useStyles = makeStyles({
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
-    backgroundColor: '#F5F5F5',
-    width: '100vw'
+    backgroundColor: "#F5F5F5",
+    width: "100vw",
   },
   container: {
     marginTop: "5px",
     width: "50vh",
     padding: "20px",
-    display: 'flex'
-  
+    display: "flex",
   },
 
   item: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: '5px'
-    
-   
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: "5px",
   },
   box: {
     padding: "70px",

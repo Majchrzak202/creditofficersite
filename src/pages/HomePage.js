@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
-    paddingTop: '-10px'
+    paddingTop: "-10px",
   },
 });
 

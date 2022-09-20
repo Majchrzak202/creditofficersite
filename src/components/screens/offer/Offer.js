@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 const Offer = () => {
   const classes = useStyles();
-
   return (
     <div className={classes.offer}>
       <Typography fontWeight={800} variant="h5">
