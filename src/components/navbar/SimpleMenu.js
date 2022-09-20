@@ -41,7 +41,6 @@ function SimpleMenu() {
       >
         {offerSegments.map((offer) => (
           <Link
-            
             key={offer.title}
             style={{ textDecoration: "none", color: "black" }}
             to={`/kredyty/${offer.id}`}
