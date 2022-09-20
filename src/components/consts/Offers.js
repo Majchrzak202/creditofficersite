@@ -1,7 +1,6 @@
 import { BusinessCenter } from "@mui/icons-material";
 import { Factory, Agriculture } from "@mui/icons-material";
 import { MonetizationOn } from "@mui/icons-material";
-
 import { LocalShipping } from "@mui/icons-material";
 import { Apartment } from "@mui/icons-material";
 
