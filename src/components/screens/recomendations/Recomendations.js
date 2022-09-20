@@ -4,8 +4,6 @@ import { ThumbUp } from "@mui/icons-material";
 import useStyles from "./Styles";
 import recomendation from "../../consts/RecomendationArray";
 
-
-
 const Recomendations = () => {
   const classes = useStyles();
   return (
